@@ -1,13 +1,13 @@
-# Frontend-data
+# Frontend-applications
    ![Visu 1](https://github.com/lamartm/Frontend-Applications/blob/main/public/images/visu%201.PNG)
    ![Visu 2](https://github.com/lamartm/Frontend-Applications/blob/main/public/images/visu%202.PNG)
    
 ## Live-Demo
-[Link](https://lamartm.github.io/frontend-data/)
+[Link](https://frontend-app-mohamed-l.herokuapp.com/)
    
 ## Beschrijving 📖
-Voor Frontend-Data maken we gebruik van de opgeschonde data die we in Functional Programming hebben gemaakt. Hiervan maken we visualisaties met behulp van de D3 library.
-Ik zal gebruik maken van de carpool data van de RDW om een visualisatie te maken voor de Volkskrant. De visualisatie zal over de volgende vraag gaan:
+Voor Frontend-Application maken we gebruik van de opgeschonde data die we in Functional Programming hebben gemaakt. Hiervan maken we visualisaties met behulp van de D3 library.
+Ik zal gebruik maken van de carpool data van de RDW om een visualisatie te maken voor de Volkskrant. Uiteindelijk moet dit dan in een frontend framework naar keuze. Ik had voor React gekozen. De visualisatie zal over de volgende vraag gaan:
 
 ### Wat zijn de mogelijkheden van de carpool locaties binnen Nederland?
 
@@ -23,7 +23,7 @@ Voor de rest heb ik gebruik gemaakt van de lessen die we kregen.
 ## Install guide 🚀
 Clone deze repo:
 
-```$ git https://github.com/lamartm/frontend-data.git```
+```$ git https://github.com/lamartm/Frontend-Applications.git```
 
 Navigeer naar deze map en run de volgende command:
 
@@ -31,18 +31,30 @@ Navigeer naar deze map en run de volgende command:
 
 Om de project te gebruiken:
 
-``` npm run dev ```
+``` npm start ```
 
 ### Dependencies
 ```   
 "dependencies": {
-    "d3": "^6.2.0"
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/geojson": "^7946.0.8",
+    "d3": "^6.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "topojson": "^3.0.2",
+    "web-vitals": "^1.1.2"
   }
 ```
 ### Scripts
 ```
 "scripts": {
-    "test": "node index.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   }
 ```
 
