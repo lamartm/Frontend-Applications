@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Frontend-data
+   ![Visu 1](https://github.com/lamartm/Frontend-Applications/blob/main/public/images/visu%201.PNG)
+   ![Visu 2](https://github.com/lamartm/Frontend-Applications/blob/main/public/images/visu%202.PNG)
+   
+## Live-Demo
+[Link](https://lamartm.github.io/frontend-data/)
+   
+## Beschrijving 📖
+Voor Frontend-Data maken we gebruik van de opgeschonde data die we in Functional Programming hebben gemaakt. Hiervan maken we visualisaties met behulp van de D3 library.
+Ik zal gebruik maken van de carpool data van de RDW om een visualisatie te maken voor de Volkskrant. De visualisatie zal over de volgende vraag gaan:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Wat zijn de mogelijkheden van de carpool locaties binnen Nederland?
 
-## Available Scripts
+Voor verdere uitleg over de vraag en de subvragen kunt u hier naartoe:
+[wiki -  Concept beschrijving](google.com)
 
-In the project directory, you can run:
+## Hulpbronnen 🦮
+Ik heb voornamelijk de course van Curran gevolgd om een D3 visualisatie te maken: 
+(https://www.youtube.com/watch?v=vHqTbSd4D4I&ab_channel=CurranKelleher)
 
-### `npm start`
+Voor de rest heb ik gebruik gemaakt van de lessen die we kregen.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Install guide 🚀
+Clone deze repo:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```$ git https://github.com/lamartm/frontend-data.git```
 
-### `npm test`
+Navigeer naar deze map en run de volgende command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+``` npm install ```
 
-### `npm run build`
+Om de project te gebruiken:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+``` npm run dev ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Dependencies
+```   
+"dependencies": {
+    "d3": "^6.2.0"
+  }
+```
+### Scripts
+```
+"scripts": {
+    "test": "node index.js"
+  }
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dataset 💽
+Ik maakte hiervoor alleen gebruik van de carpool dataset van de RDW:
+[Carpool dataset](https://opendata.rdw.nl/Parkeren/GEO-Carpool/9c54-cmfx)
 
-### `npm run eject`
+## Variabelen 🗄️
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+De volgende variabellen zijn gebruikt van de RDW dataset:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- AreaDesc - De naam van de carpool locatie
+- aantal_parkeer_plaatsen - Variabel die de aantal parkeerplaatsen van een carpool locatie laat zien
+- aantal_laad_punten - Variabel die de aantal laadpunten van een carpool locatie laat zien
+- toegankelijk_voor_gehandicapten - Variabel die de aantal carpool locaties laat zien die toegankelijk voor gehandicapten zijn
+- Location -  Variabel die de locatie zien in coordinaten van de carpool locaties
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Sources ℹ️
+[CurranKelleher. (2018, 23 augustus). Data Visualization 2018 Course Overview [Video]. YouTube.]
+(https://www.youtube.com/watch?v=vHqTbSd4D4I&ab_channel=CurranKelleher)
