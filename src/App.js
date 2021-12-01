@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import * as d3 from "d3";
+import SelectType from "./SelectType";
+import MapCircles from "./Map/MapCircles";
+import Map from "./Map/Map";
 
 function App() {
+  MapCircles();
+
+  d3.selectAll("#map").append("div").attr("class", "hidden tooltip");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SelectType />
+      <h1>Verschillende aspecten van carpool locaties</h1>
+      <Map/>
+    </>
   );
 }
 
