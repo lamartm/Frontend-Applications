@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { apiCall } from "../call.js";
+import { rdwApiCall } from "../../rdwApiCall.js";
 import { mouseMove, mouseOut } from "./MapTooltip";
 import * as d3 from "d3";
 
 const MapCircles = () => {
-  const circleData = apiCall()
+  const circleData = rdwApiCall()
 
   //Radius scale van de cirkels in de map hier gezet op scaleSqrt
   const radiusScale = d3.scaleSqrt();

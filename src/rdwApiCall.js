@@ -13,7 +13,7 @@ function ParkingObject(d) {
 }
 
 //Roep hier de functie met de RDW Data
-export function apiCall() {
+export function rdwApiCall() {
   const [circleData, setCircleData] = useState([]);
 
   useEffect(() => {

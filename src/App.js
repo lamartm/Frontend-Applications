@@ -1,8 +1,8 @@
 import "./App.css";
 import * as d3 from "d3";
-import SelectType from "./SelectType";
-import MapCircles from "./Map/MapCircles";
-import Map from "./Map/Map";
+import SelectType from "./Components/SelectType";
+import MapCircles from "./Components/Map/MapCircles";
+import Map from "./Components/Map/Map";
 
 function App() {
   MapCircles();
